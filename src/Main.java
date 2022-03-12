@@ -22,10 +22,10 @@ public class Main {
                 int l = (int)(Math.random() * 46) + 2;
                 int w = (int)(Math.random() * 46) + 2;
                 int h = (int)(Math.random() * 46) + 2;
-                Package p1 = new Package(a1,a2,3.0,l,w,h);
+                Package p1 = new Package(a1, a2,3.0, l, w, h);
                 System.out.println("Address 1: " + a1.toString());
                 System.out.println("Address 2: " + a2.toString());
-                System.out.println("Cost: $"+ postage.calculatePostage(p1));
+                System.out.println("Cost: $" + postage.calculatePostage(p1));
                 System.out.print("Would you like to (s)imulate the postage calculator, (e)nter your own package, or (q)uit? : ");
                 str = input.nextLine();
             }
@@ -43,7 +43,7 @@ public class Main {
                 System.out.print("Enter the width of the package: ");
                 int w = Integer.parseInt(input.nextLine());
                 System.out.print("Enter the height of the package: ");
-                int h = Integer.parseInt(input.nextLine());
+                int h = Integer.parseInt(input.nextLine());      //input.nextInt();
                 Package p = new Package(new Address(a3), new Address(a4), weight, l, w, h);
                 System.out.println("Cost: $" + postage.calculatePostage(p));
                 System.out.print("Would you like to (s)imulate the postage calculator, (e)nter your own package, or (q)uit? : ");
